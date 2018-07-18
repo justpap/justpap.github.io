@@ -1,0 +1,238 @@
+/* GENERAL STYLES - start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: gray;
+    font-weight: 300;
+}
+
+#main-nav {
+    background-color: lightblue;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #fff;
+    transition: color .3s ease;
+    font-size: 3rem;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0ed8d6;
+
+
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.7rem;
+
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #0ed8d6;
+
+}
+
+
+#main-header {
+    background-image: url(../img/header-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    background-position: center, center;
+    background-position: center;
+    position: relative;
+
+}
+
+.header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.header-content
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    margin: auto;
+
+}
+
+span {
+    color: #1ac056;
+    font-weight: normal;
+}
+
+#about .main-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    padding: 50px;
+
+}
+
+#about .under-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.img2 {
+    background-image: url(../img/jan-nowak.jpg);
+    width: 500px;
+    height: 700px;
+    background-size: cover;
+    background-position: center, center;
+    background-position: center;
+    position: relative;
+}
+
+
+}
+
+#skills .main-item {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+#skills .main-text {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+#skills .under-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+    
+
+}
+
+#skills .fab {
+   
+    font-size: 40px;
+    padding: 60px;
+    margin: 40px;;
+
+
+}
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+
+   
+}
+
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+    
+  
+}
+
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio3.jpg);
+ 
+  
+
+}
+
+#portfolio .portfolio-items {
+    font-size: 5px;
+    text-align: center;
+}
+#portfolio .portfolio-item {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#portfolio .item-mask {
+    background: rgba(42, 61, 79, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    font-size: 16px;
+    opacity: 0;
+        
+}
+#portfolio .item-mask:hover {
+    opacity: 1;
+    }
+
+#portfolio .item-content {
+    margin: 10px;
+    height: 330px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+
+#portfolio .item-content-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 0;
+    right: 0;
+}
+
+#contact {
+    background-color: beige;
+    background-size: auto auto, cover;
+    padding-top: 40px;
+}
+
+#contact .section-title {
+    color: black;
+    padding: 10px;
+
+}
+#contact .section-caption {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+#contact input, #contact textarea {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: 0;
+    width: 100%;
+    font-size: 2 rem;
+}
+
+#contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+#contact .btn {
+    padding: 10px;
+    margin-bottom: 10px;
+}
