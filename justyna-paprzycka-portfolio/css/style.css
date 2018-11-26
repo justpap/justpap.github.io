@@ -1,0 +1,374 @@
+/* GENERAL STYLES - start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: gray;
+    font-weight: 300;
+
+}
+
+#main-nav {
+    background-color: #616161;
+    height: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #fff;
+    transition: color .3s ease;
+    font-size: 2.5rem;
+
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f8bbd0;
+
+
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    margin-left: 20px;
+
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #f8bbd0;
+
+}
+
+
+#main-header {
+    background-image: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), url(../img/header-background.jpg);
+
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    background-position: center, center;
+    background-position: center;
+    position: relative;
+
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.header-content p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+
+
+}
+
+h1 {
+
+    font-weight: normal;
+    font-size: 80px;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 80px;
+
+
+}
+
+#about {
+    width: 100%;
+    background-color: #fafafa;
+    background-size: cover;
+}
+
+#about .main-item {
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    padding: 50px;
+    color: #616161;
+    background-size: cover;
+
+}
+
+#about .under-text {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #616161;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px;
+
+
+
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.img2 {
+    background-image: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url(../img/justyna_paprzycka.jpg);
+    width: 370px;
+    height: 370px;
+    padding-top: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+#skills {
+    background-color: #eeeeee;
+
+}
+
+#skills .main-item {
+    font-family: "Dosis", sans-serif;
+    font-size: 50px;
+    color: #616161;
+    padding-top: 70px;
+
+}
+
+#skills .main-text {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    color: #616161;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    padding: 10px;
+
+}
+
+#skills .under-text {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+
+
+}
+
+#skills .fab {
+
+    font-size: 40px;
+
+    margin: 10px;
+    text-align: center;
+    color: #616161;
+
+}
+
+#skills .icons .fab:hover {
+
+    color: #f8bbd0;
+
+}
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+
+
+}
+
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+
+
+}
+
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio3.jpg);
+
+
+
+}
+
+#portfolio {
+    font-family: "Dosis", sans-serif;
+    font-size: 50px;
+    color: #616161;
+    text-align: center;
+
+}
+
+#portfolio .portfolio-items {
+    font-size: 5px;
+    text-align: center;
+}
+
+#portfolio .portfolio-item {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio .item-mask {
+    background: rgba(42, 61, 79, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+    font-size: 16px;
+    opacity: 0;
+
+}
+
+#portfolio .item-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .item-content {
+    margin: 10px;
+    height: 330px;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+
+#portfolio .item-content-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    left: 0;
+    right: 0;
+}
+
+#contact {
+    background-image: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/footer-background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center, center;
+    background-position: center;
+    position: relative;
+
+
+}
+
+#contact .section-title {
+    font-family: "Dosis", sans-serif;
+    font-size: 50px;
+    color: white;
+    padding-top: 50px;
+
+}
+
+#contact .under-text {
+    font-size: 20px;
+    color: white;
+    padding-bottom: 40px;
+
+}
+
+#contact .form-control {
+    height: 40px;
+    width: 400px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    color: #fff;
+   
+}
+
+
+
+
+#contact .form-text {
+    height: 160px;
+    width: 405px;
+    border: 2px solid #f8bbd0 ;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+#contact .btn {
+    height: 40px;
+    width: 80px;
+    border: 1px solid #424242;
+    border-radius: 10px;
+    background-color: #f8bbd0;
+    margin-top: 20px;
+    margin-right: 220px;
+
+}
+input .form-control {
+    color: aliceblue;
+}
+
+#contact .btn:hover {
+    background-color: #bdbdbd;
+}
+
+#contact .logo {
+    font-size: 40px;
+    color: white;
+
+}
+
+#contact .name-contact {
+    font-size: 40px;
+    color: #f8bbd0;
+}
+
+#contact .number-contact {
+    font-size: 30px;
+    color: white;
+}
+
+#contact .fab {
+    font-size: 20px;
+    color: white; 
+
+}
+
+#contact .fas {
+    color: white;
+    font-size: 20px;
+}
+
+#contact .fab:hover {
+    color: #bdbdbd;
+    transform: scale(1.5);
+
+
+}
+
+#contact .fas:hover {
+    color: #bdbdbd;
+    transform: scale(1.5);
+
+
+}
+
+#contact .font-bold {
+    color: white;
+}
+
+#contact .font-bold:hover {
+    color: #bdbdbd;
+
+}
+ #
