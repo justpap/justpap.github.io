@@ -1,26 +1,16 @@
-//const links = $("a:not([href='#'])");
-//const body = $("body");
-//const scrollTime = 600;
+'use strict';
+$(document).ready(function () {
 
-//function navigation(e) {
-    'use strict';
-  //  'use strict';
-   // 'use strict';
-   // e.preventDefault();
-    //links.removeClass('active');
-    //$(this).addClass("active");
+    $('a[href^="#"]').on('click', function (event) {
 
-    //let targetElement = $(this.hash);
-   //$("html, body").animate({scrollTop: targetElement.offset().top},scrollTime);
-//}
+        var target = $($(this).attr('href'));
 
-//function scrollWindow() {
-   // if( $(window).scrollTop() > 20 ) {
-     //   body.addClass("move");
-    //} else {
-    //    body.removeClass("move");
-    //}
-//}
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 80
+            }, 1000);
+        }
+    });
 
-//links.on("click", navigation);
-//$(window).on("scroll", scrollWindow)//
+});

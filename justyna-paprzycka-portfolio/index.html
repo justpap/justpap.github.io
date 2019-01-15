@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,13 +13,19 @@
     <link rel="icon" href="favicon.ico">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">-->
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -68,13 +74,15 @@
 
 
     <!--    ABOUT-START -->
-    <section id="about">
+    <section id="about" class="anchor">
         <h2 class="main-item text-uppercase text-center">O mnie</h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <figure class="img2">
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <figure class="circle-img">
+                        <div class="img-photo"></div>
                     </figure>
+
                 </div>
 
                 <div class="col-md-6">
@@ -89,215 +97,83 @@
     </section>
 
 
-    <section id="skills">
+    <section id="skills" class="anchor">
         <h2 class="main-item text-uppercase text-center">umiejętności</h2>
         <p class="main-text text-center"> Wybrane umiejętności i technologie, które wykorzystuję na codzień w swoich projektach.</p>
 
         <div class="container">
             <div class="row">
 
-                <div class="col-md-2">
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><i class="fab fa-html5 text-center"> <p class="under-text text-uppercase text-center">HTML5</p></i>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-html5"> <p class="under-text text-uppercase">HTML5</p></i>
                     </figure>
 
                 </div>
 
-                <div class="col-md-2">
-
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><i class="fab fa-css3-alt text-center"><p class="under-text text-uppercase text-center">CSS3</p></i>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-css3-alt"><p class="under-text text-uppercase">CSS3</p></i>
                     </figure>
 
                 </div>
 
-                <div class="col-md-2">
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><i class="fab fa-js-square text-center"><p class="under-text text-capitalize text-center">JavaScript</p></i>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-js-square"><p class="under-text text-capitalize">JavaScript</p></i>
                     </figure>
                 </div>
-                <div class="col-md-2">
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><span class="icons/if_jquery_282807.ico"><p class="under-text text-center">jQuery</span>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-github"><p class="under-text">GitHub</p></i>
                     </figure>
-
                 </div>
 
-                <div class="col-md-2">
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><i class="fab fa-sass text-center"><p class="under-text text-capitalize text-center">sass</p></i>
-                    </figure>
 
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-sass"><p class="under-text text-capitalize">sass</p></i>
+                    </figure>
                 </div>
-                <div class="col-md-2">
-                    <div class="skills-icons"></div>
-                    <figure class="icons"><i class="fab fa-gulp"><p class="under-text text-capitalize text-center">gulp</p></i>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab fa-gulp"><p class="under-text text-capitalize">gulp</p></i>
                     </figure>
 
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-java text-center"><p class="under-text text-uppercase text-center">ajax</p></i>
-                        </figure>
-
-                    </div>
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-java text-center"><p class="under-text text-uppercase text-center">json</p></i>
-                        </figure>
-
-                    </div>
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-java text-center"><p class="under-text text-capitalize text-center">bootstrap</p></i>
-                        </figure>
-
-                    </div>
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-github"><p class="under-text text-center">GitHub</p></i>
-                        </figure>
-
-                    </div>
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-java text-center"><p class="under-text text-uppercase text-center">RWD</p></i>
-                        </figure>
-
-                    </div>
-                    <div class="col-md-2">
-                        <div class="skills-icons"></div>
-                        <figure class="icons"><i class="fab fa-java text-center"><p class="under-text text-capitalize text-center">materialize
-                </p></i>
-                        </figure>
-
-                    </div>
-
-
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab"><p class="under-text text-uppercase">ajax</p></i>
+                    </figure>
 
                 </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab"><p class="under-text text-uppercase">json</p></i>
+                    </figure>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab"><p class="under-text text-capitalize">bootstrap</p></i>
+                    </figure>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab"><p class="under-text">jQuery</p></i>
+                    </figure>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons"><i class="fab"><p class="under-text text-uppercase">RWD</p></i>
+                    </figure>
+
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 text-center">
+                    <figure class="icons text-center"><i class="fab"><p class="under-text text-capitalize">materialize</p></i>
+                    </figure>
+
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- 
-           <section id="portfolio">
-            <div class="container">
-    
-                <h1 class="main-text text-uppercase text-center"> portfolio</h1>
-                <div class="row">
-    
-                    <div class="col-md-4  no-padding">
-    
-                        <div class="portfolio-items">
-                            pojedynczy element portfolio
-                            <div class="portfolio-item" id="portfolio-item-1">
-                                element kolorowa maska
-                                <div class="item-mask">
-                                    element zawierający treść portflio-biała ramka
-                                    <div class="item-content">
-                                        <div class=item-content-inner>
-                                            <h3 class="main-text text-uppercase text-center">Portfolio 1</h3>
-                                            <p class="main-text text-capitalize text-center">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sequi porro corporis eos repudiandae nemo tempore id cupiditate officiis enim.
-                                            </p>
-                                            <h4 class="main-text text-capitalize text-center">Technologie</h4>
-                                            <p class="main-text text-capitalize text-center">
-                                                HTML5, CSS3, RWD
-                                            </p>
-    
-                                            <a href="#" class="project-link">
-                            <i class="fas fa-link"></i>
-                                </a>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-    
-    
-                    <div class="col-md-4 no-padding">
-    
-                        <div class="portfolio-items">
-                            pojedynczy element portfolio
-                            <div class="portfolio-item" id="portfolio-item-2">
-                                element kolorowa maska
-                                <div class="item-mask">
-                                    element zawierający treść portflio-biała ramka
-                                    <div class="item-content">
-                                        <div class=item-content-inner>
-                                            <h3 class="main-text text-uppercase text-center">Portfolio 2</h3>
-                                            <p class="main-text text-capitalize text-center">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sequi porro corporis eos repudiandae nemo tempore id cupiditate officiis enim.
-                                            </p>
-                                            <h4 class="main-text text-capitalize text-center">Technologie</h4>
-                                            <p class="main-text text-capitalize text-center">
-                                                HTML5, CSS3, RWD
-                                            </p>
-    
-                                            <a href="#" class="project-link">
-                            <i class="fas fa-link"></i>
-                                </a>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-md-4  no-padding">
-    
-                        <div class="portfolio-items">
-                            pojedynczy element portfolio
-                            <div class="portfolio-item" id="portfolio-item-3">
-                                element kolorowa maska
-                                <div class="item-mask">
-                                    element zawierający treść portflio-biała ramka
-                                    <div class="item-content">
-                                        <div class=item-content-inner>
-                                            <h3 class="main-text text-uppercase text-center">Portfolio 3</h3>
-                                            <p class="main-text text-capitalize text-center">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sequi porro corporis eos repudiandae nemo tempore id cupiditate officiis enim.
-                                            </p>
-                                            <h4 class="main-text text-capitalize text-center">Technologie</h4>
-                                            <p class="main-text text-capitalize text-center">
-                                                HTML5, CSS3, RWD
-                                            </p>
-    
-                                            <a href="#" class="project-link">
-                            <i class="fas fa-link"></i>
-                                </a>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-    
-    
-    
-    
-    
-                </div>
-            </div>
-    
-    
-        </section> -->
-
-
-
-
-
-    <section id='portfolio' class="portfolio-section">
+    <section id="portfolio" class="anchor">
         <div class="container">
             <h3 class="section-title">Projekty</h3>
             <p class="text-center">Ostatnie projekty, które realizowałam.</p>
@@ -343,7 +219,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="anchor">
         <div class="container" id="contact-container-background">
             <div class="row">
                 <div class="col-md-12">
@@ -353,12 +229,35 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-12 col-lg-6 align-self-center">
+
+
+                    <form class="form-contact">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Imię i nazwisko">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adres email">
+
+                        </div>
+
+                        <div class="form-group">
+                            
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Wiadomość"></textarea>
+                        </div>
+                        <div class="center-outer">
+                        <button type="submit" class="btn btn-secondary center">Wyślij</button>
+                         </div>
+                    </form>
+
+
+                    <!--
                     <form>
                         <div class="form-group">
                             <input name="name" type="text" class="form-control" placeholder=" Imię i nazwisko">
                             <input name="email" type="email" class="form-control" placeholder=" Adres e-mail">
-                            <textarea placeholder=" Wiadomość" name="message" class="form-text" cols="30" rows="10"></textarea>
+                            <textarea placeholder=" Wiadomość" name="message" class="form-text" cols="59" rows="10"></textarea>
                             <div class="center-outer">
                                 <button type="submit" class="btn btn-primary center">Wyślij</button>
                             </div>
@@ -366,11 +265,12 @@
                         </div>
 
                     </form>
+-->
 
                 </div>
-                <div class="col-md-6">
-                    <div class="text-center">
-                        <h3 class="m-5"></h3>
+                <div class="col-12 col-lg-6 align-self-center">
+                    <div class="contact-details text-center">
+<!--                        <h3 class="m-5"></h3>-->
 
                         <span class="logo">just it <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPhSURBVGhD7Zk7aBRRFIajha2PSkE7G0UUwUcjdj5AMI2IaCOCGrSxUGyUBAtBEPGJIBh7sVAU3J0ZifgAxezc2SRiYeEDRCRgomR3dtbH+J/dk7CZPTdz784mNvvDRyBz//+cuXPvnc2mq6OOOmpW1VObKq56ErrBeMUNvoDrE4/fLOPLsy6qhfo3qXa9B+VFOX8dX55Z5dzwCm48no76VnaDLTxs1lTOF7dWnGA0WT90gjGjSQwddT5pniR0VRR6/jYe2nahyR1UQ6pN4FofD9ULd/9SMk+Cp1OqOoUNPLxtqrr+RsqWajbwlIfrVXHUV8GY5EP8aGgxWzLrb25kCSbuo1AngfrMFr3k9d8MHueDOI7nsa1lUQaW7UOpRhLqjW16YR1WJbOIE5xkW8vCEz8tZgvQEmObXpJRR23Def5qtlorygdrrCYMsFUvyZTCi1aWUtwbz087MCTYrpdkSiP01FG2Gwsz3yNlpcF2vSRTGrWXzMDIUo5IFb2QyCNlpcERekkmQ/o5IlUYeyfhNYYj9JJMJmBD/4m8obUco1XkButprJRhAsfoJZmMcQKXY7SiD2ai1xCO0Usy2YCzeidHNQln/i7JYwNH6SWZbMANKOlYpWMTb9yi5LGB4/SSTNZ4xT0cN6XIUXvFsZZwnF6SyRZs0mGacY7k2Q9GpLG2cKReKD4hGW2JvGAfR2L2/f3SGFuoN47UC4PeSWZbsBcC2gv8aTPz2ifwFN9ym3rhpLgqmVuCTp02nDyTYCKucJt60csoy4tmGo56XkO6Zgn1RJ9euc2Zxd8IiEH/DSe4we2lK747siDrG7O9KI964vbMVL+J4Bo24+/mwLkBm/YXls5l6+YbRX9xIegSgoaxiX5KhdoJ1aC3OepdrDiFVdxGNtX/eiruxoZ8JhVtK07wKXLVgcYXYSbRh7N2neM2oKYf5tV2bqM14TH2SeFzizrD7diplA82Yxb+yqFzB/Vg/MVuo2C+lQyzBU8wIqRrVuDTAbdlLlqDYpgNjrqNn/1Nv7dGveK2zEWngRxmBjb/eJgrrKxh+HXlDLzntsyV5fN7fe/43RyF5eh3Z9lP9F7gKHPhBu5LYWlQo6HrH+OYKdHvWr0J+O5xjLlwBh+XwlJx1AmOaBJdEz0pYDJ7OMJc8YBahEf3QwrUo06xXSsaI3tl0PxY7A4uZLudcAOHpFANZ9mWKhqb8GrBSjjIttaE9XcYZ3lFCidwkyVcP8LDjUUezG5ZyiSoJtXm4dlUGiguR7ELCCwg+DuO2FE6m/GzN8u/X+tf8qpzyH5NmZQNBqkW1eRhHXXUkVZdXf8ASb9GwfjBc40AAAAASUVORK5CYII=" height="30" width="30">
 
@@ -404,7 +304,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
     <!-- FOOTER -->
     <footer class="main-footer">
@@ -421,9 +321,6 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
 

@@ -14,6 +14,10 @@ body {
 
 }
 
+.anchor { 
+    padding-top: 80px; 
+   
+}
 #main-nav {
     background-color: #616161;
     height: 80px;
@@ -30,8 +34,10 @@ body {
 
 .navbar-light .navbar-nav .nav-link:hover {
     color: #f8bbd0;
+}
 
-
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #f8bbd0;
 }
 
 
@@ -84,6 +90,7 @@ body {
 h1 {
 
     font-weight: normal;
+    color: #f8bbd0;
     font-size: 80px;
     text-align: left;
     margin-left: 80px;
@@ -94,14 +101,15 @@ h1 {
 
 #about {
     width: 100%;
+    margin: 40px;
 
-    background-size: cover;
+    
 }
 
 #about .main-item {
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
-    padding: 50px;
+    padding-bottom: 70px; 
     color: #616161;
     background-size: cover;
 
@@ -112,9 +120,10 @@ h1 {
     font-size: 20px;
     color: #616161;
     line-height: 1.5;
-    margin-left: 50px;
-    margin-top: 20px;
-    padding: 10px;
+    position: relative;
+
+ 
+  
 
 
 
@@ -124,20 +133,28 @@ h1 {
     padding: 0px;
 }
 
-.img2 {
-    background-image: linear-gradient( rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url(../img/justyna_paprzycka.jpg);
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
+figure.circle-img
+{
+    margin: auto;
 }
+
+.circle-img .img-photo{
+    background-image: url(../img/justyna_paprzycka.jpg);
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    margin: auto;
+    padding: 0;
+}
+
+
 
 #skills {
     background-color: #eeeeee;
+    padding-bottom: 40px;;
 
 }
 
@@ -145,7 +162,7 @@ h1 {
     font-family: "Dosis", sans-serif;
     font-size: 50px;
     color: #616161;
-    padding-top: 70px;
+    padding-top: 40px;
 
 }
 
@@ -153,7 +170,7 @@ h1 {
     font-family: "Dosis", sans-serif;
     font-size: 20px;
     color: #616161;
-    margin-bottom: 50px;
+    margin: 50px;
     line-height: 1.5;
     padding: 10px;
 
@@ -165,7 +182,7 @@ h1 {
     padding-top: 20px;
 
 
-}
+} 
 
 #skills .fab {
 
@@ -177,7 +194,7 @@ h1 {
 
 }
 
-#skills .icons .fab:hover {
+#skills .fab:hover {
 
     color: #f8bbd0;
 
@@ -258,6 +275,9 @@ h1 {
 }
  */
 
+#portfolio {
+    padding-bottom: 30px;
+}
 #contact {
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url(../img/footer-background.jpg);
     background-size: cover;
@@ -271,7 +291,7 @@ h1 {
     font-family: "Dosis", sans-serif;
     font-size: 50px;
     color: white;
-    padding-top: 50px;
+/*    padding-top: 50px;*/
 
 }
 
@@ -282,24 +302,39 @@ h1 {
 
 }
 
-#contact .form-control {
+ 
+
+/* #contact .form-control {
     height: 40px;
-/*    max-width: 400px;*/
+max-width: 400px;
     border: 2px solid #616161;
     border-radius: 10px;
     color: #fff;
+    outline: none;
 
 }
 
 
 #contact .form-text {
     height: 160px;
-/*    max-width: 404px;*/
+max-width: 404px;
     border: 2px solid #616161;
     border-radius: 10px;
     color: #fff;
 
 }
+
+textarea::placeholder {
+    color: #6c757d;
+}
+
+textarea {
+    outline: none;
+    background-color: rgba(0, 0, 0, .2);
+    color: black;
+    
+}
+
 
 #contact .btn {
     height: 40px;
@@ -318,9 +353,14 @@ input .form-control {
 
 #contact .btn:hover {
     background-color: #bdbdbd;
+} */
+
+#contact .contact-details {
+    padding-bottom: 40px;
 }
-
-
+.icons {
+    margin:auto;
+}
 
 
 
@@ -397,9 +437,6 @@ name-contact {
 }
 
 
-textarea::placeholder {
-    color: #6c757d;
-}
 
 .center {
     display: inline-block;
@@ -408,4 +445,24 @@ textarea::placeholder {
 .center-outer {
     width: 100%;
     text-align: center;
+}
+
+.form-contact .form-control {
+    
+    border: 0;
+    color: #fff;
+    outline: none;
+    background-color: rgba(238, 238, 238, 0.5);
+   
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-contact ::placeholder {
+    color: #fff;
+    opacity: 0.5;
 }
