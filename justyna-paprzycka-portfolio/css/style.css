@@ -178,7 +178,7 @@ figure.circle-img
 #skills .under-text {
     font-family: "Dosis", sans-serif;
     font-size: 20px;
-    padding-top: 20px;
+  
 
 
 } 
@@ -364,7 +364,7 @@ input .form-control {
 
 
 #contact .logo,
-name-contact {
+.name-contact {
     font-size: 35px;
     color: white;
 
