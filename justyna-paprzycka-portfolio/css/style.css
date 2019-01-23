@@ -82,19 +82,30 @@ body {
 }
 
 #header .header-title {
-
-    color: #f8bbd0;
-    font-size: 80px;
-
+        color: #f8bbd0;
 }
 
-#header .header-text {
+@media screen and (min-width: 601px){
+    #header .header-title {
+        font-size: 80px;
+    }
     
-    font-size: 50px;
+    #header .header-text {    
+        font-size: 50px;
+    }
 }
 
- .section-title {
+@media screen and (max-width: 600px) {
+    #header .header-title {
+        font-size: 60px;
+    }
     
+    #header .header-text { 
+        font-size: 40px;
+    }
+}
+
+ .section-title {    
     font-size: 50px;
     color: #616161;
     background-size: cover;
