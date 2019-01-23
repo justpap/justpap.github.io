@@ -17,13 +17,15 @@ body {
 
 
 
-#main-nav {
+.main-nav {
     background-color: #616161;
-    height: 80px;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
--moz-box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
-box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
     
+
+/*    height: 80px;*/
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(97, 97, 97, 1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(97, 97, 97, 1);
+    box-shadow: 0px 5px 5px 0px rgba(97, 97, 97, 1);
+
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -31,8 +33,6 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
     color: #fff;
     transition: color .3s ease;
     font-size: 2.5rem;
-
-
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -40,26 +40,26 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 }
 
 .navbar-light .navbar-nav .nav-link:focus {
-    color: #f8bbd0;
+    color: #fff;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-size: 1.8rem;
-    font-family: 'Dosis', sans-serif;
-
 }
 
 .navbar-light .navbar-brand {
     color: #fff;
     margin-left: 20px;
-
 }
 
 .navbar-light .navbar-brand:hover {
     color: #f8bbd0;
+}
 
+.navbar-light .navbar-brand:focus {
+    color: #fff;
 }
 
 
@@ -69,11 +69,11 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
     background-size: cover;
     color: #fff;
     background-position: center, center;
-   
+
 }
 
 #header-container-background {
-    
+
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -82,81 +82,68 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 }
 
 #header .header-title {
-    
+
     color: #f8bbd0;
-    font-size: 80px;  
+    font-size: 80px;
 
 }
 
 #header .header-text {
-
-
+    
     font-size: 50px;
 }
 
-/*}
-
- #header-container-background .center-name {
-
-    font-weight: normal;
-    color: #f8bbd0;
-    font-size: 80px;
-    text-align: left;
-    margin-left: 80px;
-    margin-bottom: 80px;
-
-
-}*/
-
-
-#about .section-title{
+ .section-title {
+    
     font-size: 50px;
     color: #616161;
     background-size: cover;
-    
+
 }
 
-#about .section-text {
+ .section-text {
+    
     font-size: 20px;
     color: #616161;
     line-height: 1.5;
-   
+
 
 }
 
 .circle-img .img-photo {
+    
     background-image: url(../img/justyna_paprzycka.jpg);
     width: 230px;
     height: 230px;
     border-radius: 50%;
     background-size: cover;
     margin: auto;
-    
+
 }
 
+#about .about-text {
+    color: #616161;
+    font-size: 20px;
+}
 
 
 #skills {
+    
     background-color: #eeeeee;
 }
 
-#skills .section-title {
-    font-size: 50px;
-    color: #616161;
-  
-
-}
 
 #skills .section-text {
-    
-    font-size: 20px;
-    color: #616161;
+
+ 
+    color: #616161;*/
     line-height: 1.5;
-   
+
 
 }
 
 #skills .signature-title {
+    
     font-size: 20px;
 
 
@@ -167,10 +154,7 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 
     font-size: 40px;
     color: #616161;
-  /*  margin: 10px;*/
-    /*text-align: center;*/
     
-
 }
 
 #skills .fab:hover {
@@ -179,50 +163,35 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 
 }
 
-#portfolio .section-title {
-    font-size: 50px;
-    color: #616161;
-  
-}
-
 #portfolio .section-text {
+   
+    color: #616161;
     font-size: 20px;
-    
-    
 }
 
-#portfolio {
-    padding-bottom: 30px;
+#portfolio .fab, .far{
+    color: #f8bbd0;
+    
 }
 
 #contact {
+    
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url(../img/footer-background.jpg);
     background-size: cover;
     background-position: center, center;
     background-position: center;
-    padding-bottom: 30px;
+    ;
 }
 
 
-#contact .section-title {
-    font-family: "Dosis", sans-serif;
-    font-size: 50px;
+#contact .section-title, .section-text {
+    
+
     color: white;
-    /*    padding-top: 50px;*/
-}
-
-#contact .under-text {
-    font-size: 20px;
-    color: white;
-    padding-bottom: 40px;
-
+    
 }
 
 
-
-#contact .contact-details {
-    padding-bottom: 40px;
-}
 
 .icons {
     margin: auto;
@@ -232,83 +201,83 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 
 #contact .logo,
 .name-contact {
+    
     font-size: 35px;
     color: white;
 
 }
 
 #contact .logo img {
+    
     font-size: 30px;
 }
 
 
 #contact .number-contact {
+    
     font-size: 30px;
     color: #fff;
 }
 
 #contact .number-contact a {
+    
     font-size: 25px;
     color: #fff;
 }
 
 #contact .number-contact a:hover {
+    
     font-size: 30px;
     color: #f8bbd0;
     text-decoration: none;
 
 }
 
-#contact .fab {
-    font-size: 20px;
-    color: #fff;
-
-
-}
-
-#contact .fas {
+#contact .fas,
+.fab {
+    
     color: white;
     font-size: 20px;
 
 
 }
 
-#contact .fab:hover {
+#contact .contact-details .fab:hover {
+    
     color: #bdbdbd;
-    transform: scale(1.3);
+   /* transform: scale(1.3);*/
 }
 
 #contact .fas:hover,
 .mx-2:hover {
+    
     color: #bdbdbd;
-    transform: scale(1.2);
+    /*transform: scale(1.3);*/
     text-decoration: none;
 }
 
-#contact .font-bold {
-    color: #fff;
-
-
-}
 
 #contact .font-bold:hover {
+    
     color: #bdbdbd;
 
 }
 
 .download-contact {
+    
     font-family: 'Dosis', sans-serif !important;
-
     font-weight: 400;
 }
 
 
 
 .center {
+    
     display: inline-block;
 }
 
 .center-outer {
+    
     width: 100%;
     text-align: center;
 }
@@ -323,12 +292,14 @@ box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
 }
 
 .form-control:focus {
+    
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .form-contact ::placeholder {
+    
     color: #fff;
     opacity: 0.5;
 }

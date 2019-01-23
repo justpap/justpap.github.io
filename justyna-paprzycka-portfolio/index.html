@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
@@ -28,41 +28,40 @@
 
 </head>
 
-<body>
+<body id="body">
 
     <!--  NAVIGATION-start -->
-
-    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#">just it
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPhSURBVGhD7Zk7aBRRFIajha2PSkE7G0UUwUcjdj5AMI2IaCOCGrSxUGyUBAtBEPGJIBh7sVAU3J0ZifgAxezc2SRiYeEDRCRgomR3dtbH+J/dk7CZPTdz784mNvvDRyBz//+cuXPvnc2mq6OOOmpW1VObKq56ErrBeMUNvoDrE4/fLOPLsy6qhfo3qXa9B+VFOX8dX55Z5dzwCm48no76VnaDLTxs1lTOF7dWnGA0WT90gjGjSQwddT5pniR0VRR6/jYe2nahyR1UQ6pN4FofD9ULd/9SMk+Cp1OqOoUNPLxtqrr+RsqWajbwlIfrVXHUV8GY5EP8aGgxWzLrb25kCSbuo1AngfrMFr3k9d8MHueDOI7nsa1lUQaW7UOpRhLqjW16YR1WJbOIE5xkW8vCEz8tZgvQEmObXpJRR23Def5qtlorygdrrCYMsFUvyZTCi1aWUtwbz087MCTYrpdkSiP01FG2Gwsz3yNlpcF2vSRTGrWXzMDIUo5IFb2QyCNlpcERekkmQ/o5IlUYeyfhNYYj9JJMJmBD/4m8obUco1XkButprJRhAsfoJZmMcQKXY7SiD2ai1xCO0Usy2YCzeidHNQln/i7JYwNH6SWZbMANKOlYpWMTb9yi5LGB4/SSTNZ4xT0cN6XIUXvFsZZwnF6SyRZs0mGacY7k2Q9GpLG2cKReKD4hGW2JvGAfR2L2/f3SGFuoN47UC4PeSWZbsBcC2gv8aTPz2ifwFN9ym3rhpLgqmVuCTp02nDyTYCKucJt60csoy4tmGo56XkO6Zgn1RJ9euc2Zxd8IiEH/DSe4we2lK747siDrG7O9KI964vbMVL+J4Bo24+/mwLkBm/YXls5l6+YbRX9xIegSgoaxiX5KhdoJ1aC3OepdrDiFVdxGNtX/eiruxoZ8JhVtK07wKXLVgcYXYSbRh7N2neM2oKYf5tV2bqM14TH2SeFzizrD7diplA82Yxb+yqFzB/Vg/MVuo2C+lQyzBU8wIqRrVuDTAbdlLlqDYpgNjrqNn/1Nv7dGveK2zEWngRxmBjb/eJgrrKxh+HXlDLzntsyV5fN7fe/43RyF5eh3Z9lP9F7gKHPhBu5LYWlQo6HrH+OYKdHvWr0J+O5xjLlwBh+XwlJx1AmOaBJdEz0pYDJ7OMJc8YBahEf3QwrUo06xXSsaI3tl0PxY7A4uZLudcAOHpFANZ9mWKhqb8GrBSjjIttaE9XcYZ3lFCidwkyVcP8LDjUUezG5ZyiSoJtXm4dlUGiguR7ELCCwg+DuO2FE6m/GzN8u/X+tf8qpzyH5NmZQNBqkW1eRhHXXUkVZdXf8ASb9GwfjBc40AAAAASUVORK5CYII=" alt="butterfly" height="40" width="40">
+    <nav class="main-nav navbar navbar-expand-lg navbar-light fixed-top" >
+  <a class="navbar-brand" data-toggle="collapse" data-target="#navbarNavAltMarkup.show" aria-controls="navbarNavAltMarkup.show" href="#body">just it 
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPhSURBVGhD7Zk7aBRRFIajha2PSkE7G0UUwUcjdj5AMI2IaCOCGrSxUGyUBAtBEPGJIBh7sVAU3J0ZifgAxezc2SRiYeEDRCRgomR3dtbH+J/dk7CZPTdz784mNvvDRyBz//+cuXPvnc2mq6OOOmpW1VObKq56ErrBeMUNvoDrE4/fLOPLsy6qhfo3qXa9B+VFOX8dX55Z5dzwCm48no76VnaDLTxs1lTOF7dWnGA0WT90gjGjSQwddT5pniR0VRR6/jYe2nahyR1UQ6pN4FofD9ULd/9SMk+Cp1OqOoUNPLxtqrr+RsqWajbwlIfrVXHUV8GY5EP8aGgxWzLrb25kCSbuo1AngfrMFr3k9d8MHueDOI7nsa1lUQaW7UOpRhLqjW16YR1WJbOIE5xkW8vCEz8tZgvQEmObXpJRR23Def5qtlorygdrrCYMsFUvyZTCi1aWUtwbz087MCTYrpdkSiP01FG2Gwsz3yNlpcF2vSRTGrWXzMDIUo5IFb2QyCNlpcERekkmQ/o5IlUYeyfhNYYj9JJMJmBD/4m8obUco1XkButprJRhAsfoJZmMcQKXY7SiD2ai1xCO0Usy2YCzeidHNQln/i7JYwNH6SWZbMANKOlYpWMTb9yi5LGB4/SSTNZ4xT0cN6XIUXvFsZZwnF6SyRZs0mGacY7k2Q9GpLG2cKReKD4hGW2JvGAfR2L2/f3SGFuoN47UC4PeSWZbsBcC2gv8aTPz2ifwFN9ym3rhpLgqmVuCTp02nDyTYCKucJt60csoy4tmGo56XkO6Zgn1RJ9euc2Zxd8IiEH/DSe4we2lK747siDrG7O9KI964vbMVL+J4Bo24+/mwLkBm/YXls5l6+YbRX9xIegSgoaxiX5KhdoJ1aC3OepdrDiFVdxGNtX/eiruxoZ8JhVtK07wKXLVgcYXYSbRh7N2neM2oKYf5tV2bqM14TH2SeFzizrD7diplA82Yxb+yqFzB/Vg/MVuo2C+lQyzBU8wIqRrVuDTAbdlLlqDYpgNjrqNn/1Nv7dGveK2zEWngRxmBjb/eJgrrKxh+HXlDLzntsyV5fN7fe/43RyF5eh3Z9lP9F7gKHPhBu5LYWlQo6HrH+OYKdHvWr0J+O5xjLlwBh+XwlJx1AmOaBJdEz0pYDJ7OMJc8YBahEf3QwrUo06xXSsaI3tl0PxY7A4uZLudcAOHpFANZ9mWKhqb8GrBSjjIttaE9XcYZ3lFCidwkyVcP8LDjUUezG5ZyiSoJtXm4dlUGiguR7ELCCwg+DuO2FE6m/GzN8u/X+tf8qpzyH5NmZQNBqkW1eRhHXXUkVZdXf8ASb9GwfjBc40AAAAASUVORK5CYII=" alt="butterfly" height="40" width="40">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto w-100 justify-content-end">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav w-100 justify-content-end mr-auto mt-2 mt-lg-0">
+    
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#about">o mnie </a>
+                    <a class="nav-item nav-link text-uppercase" data-toggle="collapse" data-target="#navbarNavAltMarkup.show" aria-controls="navbarNavAltMarkup.show" href="#about">o mnie </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#skills">umiejętności</a>
+                    <a class="nav-link text-uppercase" data-toggle="collapse" data-target="#navbarNavAltMarkup.show" aria-controls="navbarNavAltMarkup.show" href="#skills">umiejętności</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#portfolio">portfolio</a>
+                    <a class="nav-link text-uppercase" data-toggle="collapse" data-target="#navbarNavAltMarkup.show" aria-controls="navbarNavAltMarkup.show" href="#portfolio">portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#contact">kontakt</a>
+                    <a class="nav-link text-uppercase" data-toggle="collapse" data-target="#navbarNavAltMarkup.show" aria-controls="navbarNavAltMarkup.show" href="#contact">kontakt</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-
-
+  </div>
+        
+</nav>
     <!--   HEADER -->
     <section id="header" class="anchor">
-        <div class="container position-relative mb-5" id="header-container-background">
+        <div class="container position-relative" id="header-container-background">
             <div class="row">
                 <div class="col col-md-12 col-lg-12">
                     <h3 class="header-title text-uppercase name ">Justyna Paprzycka</h3>
@@ -76,8 +75,8 @@
 
 
     <!--    ABOUT-START -->
-    <section id="about" class="anchor">
-        <h2 class="section-title text-uppercase text-center mt-5">O mnie</h2>
+    <section id="about" class="anchor pt-5">
+        <h2 class="section-title text-uppercase text-center">O mnie</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-6 col-12 mt-5 mb-5">
@@ -88,7 +87,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6 col-12 mt-5 mb-5 ">
-                    <p class="section-text under-text text-justify  position- relative"> Koduję, bo lubię! Każdą wolną chwilę poświęcam na naukę i tworzenie swoich pojektów. Programowanie to nie lada wyzwanie dla mnie, ale dzięki zaangażowaniu i chęci ciągłego doskonalenia chciałabym rozwijać się w zespole ambitnych i pełnych pasji "kodołamaczy".
+                    <p class="about-text under-text text-justify  position- relative"> Koduję, bo lubię! Każdą wolną chwilę poświęcam na naukę i tworzenie swoich pojektów. Programowanie to nie lada wyzwanie dla mnie, ale dzięki zaangażowaniu i chęci ciągłego doskonalenia chciałabym rozwijać się w zespole ambitnych i pełnych pasji "kodołamaczy".
 
                         <br>
                         <br> A tak prywatnie to uwielbiam gotować, odkrywać nowe miejsca oraz dobrą kawę.
@@ -99,8 +98,8 @@
     </section>
 
 
-    <section id="skills" class="anchor">
-        <h2 class="section-title text-uppercase text-center pt-5 mb-5">umiejętności</h2>
+    <section id="skills" class="anchor pt-5">
+        <h2 class="section-title text-uppercase text-center">umiejętności</h2>
         <p class="section-text text-center mb-5"> Wybrane umiejętności i technologie, które wykorzystuję na codzień w swoich projektach.</p>
 
         <div class="container">
@@ -188,10 +187,10 @@
         </div>
     </section>
 
-    <section id="portfolio" class="anchor">
+    <section id="portfolio" class="anchor pt-5 pb-5">
         <div class="container">
-            <h3 class="section-title text-uppercase text-center mt-5">Projekty</h3>
-            <p class="portfolio-text text-center mt-5 mb-5">Ostatnie projekty, które realizowałam.</p>
+            <h3 class="section-title text-uppercase text-center">Projekty</h3>
+            <p class="section-text text-center mt-5 mb-5">Ostatnie projekty, które realizowałam.</p>
             <div class="portfolio-items text-center">
                 <div class="row project">
                     <div class="col-lg-6 project-image">
@@ -200,7 +199,7 @@
                     <div class="col-lg-6">
                         <h4 class="portfolio-title text-center text-uppercase mt-5">Portfolio</h4>
 
-                        <p>Moja pierwsza strona internetowa typu wizytówka, która zawiera dane oraz ostatnie projekty. Stworzona za pomocą HTML5, CSS3, jQuery oraz Bootstrapa. Strona przetestowana na <a target="_blank" title="Narzędzie do testowania szybkości ładowania strony" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> oraz na <a target="_blank" title="Narzędzie do analizowania strony pod kątem SEO " href="http://secureglass.net/seo-analizator">seo analizator</a>.</p>
+                        <p>Moja pierwsza strona internetowa typu wizytówka, która zawiera kilka słów o mnie oraz ostatnie zrealizowane (i nie tylko) projekty. Stworzona za pomocą HTML5, CSS3, jQuery oraz Bootstrapa. Strona przetestowana na <a target="_blank" title="Narzędzie do testowania szybkości ładowania strony" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></p>
                         <a target="_blank" class="m-2" title="Zobacz stronę na żywo" href="https://justit.pl"><i class="far fa-eye"></i> </a>
                         <a target="_blank" class=" m-2" title="Repozytorium strony" href="https://github.com/justynapaprzycka/portfolio"><i class="fab fa-github"></i> </a>
                     </div>
@@ -211,7 +210,7 @@
 
                         <p>Strona dla klienta napisana przy użyciu HTML5, CSS3, JavaScript. Wygląd strony stworzony za pomocą Bootstrapa.
                             <a target="_blank" class="m-2" title="Strona trans-express" href="https://trans-express.com"><i class="far fa-eye"></i> </a>
-                            <a target="_blank" class=" m-2" title="Zobacz Movies App na github" href="https://github.com/annatrzeciak/bs-recruitment-task"><i class="fab fa-github"></i> </a>
+                            <a target="_blank" class=" m-2" title="Zobacz Movies App na github" href="https://github.com/"><i class="fab fa-github"></i> </a>
                     </div>
                     <div class="col-lg-6">
                         <img src="../justyna-paprzycka-portfolio/img/img_trans_express.jpg" alt="" title="" class="img-fluid mt-5">
@@ -234,12 +233,12 @@
         </div>
     </section>
 
-    <section id="contact" class="anchor">
+    <section id="contact" class="anchor pt-5 pb-5">
         <div class="container" id="contact-container-background">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title text-uppercase text-center mt-5">Kontakt</h3>
-                    <p class="section-text text-center mt-5">Jesteś zainteresowany współpracą? Napisz do mnie :)</p>
+                    <h3 class="section-title text-uppercase text-center">Kontakt</h3>
+                    <p class="section-text text-center mt-5 mb-5">Jesteś zainteresowany współpracą? Napisz do mnie :)</p>
                 </div>
             </div>
 
@@ -269,7 +268,7 @@
 
                 </div>
                 <div class="col-12 col-lg-6 align-self-center">
-                    <div class="contact-details text-center">
+                    <div class="contact-details text-center mb-5">
                         <!--                        <h3 class="m-5"></h3>-->
 
                         <span class="logo">just it <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPhSURBVGhD7Zk7aBRRFIajha2PSkE7G0UUwUcjdj5AMI2IaCOCGrSxUGyUBAtBEPGJIBh7sVAU3J0ZifgAxezc2SRiYeEDRCRgomR3dtbH+J/dk7CZPTdz784mNvvDRyBz//+cuXPvnc2mq6OOOmpW1VObKq56ErrBeMUNvoDrE4/fLOPLsy6qhfo3qXa9B+VFOX8dX55Z5dzwCm48no76VnaDLTxs1lTOF7dWnGA0WT90gjGjSQwddT5pniR0VRR6/jYe2nahyR1UQ6pN4FofD9ULd/9SMk+Cp1OqOoUNPLxtqrr+RsqWajbwlIfrVXHUV8GY5EP8aGgxWzLrb25kCSbuo1AngfrMFr3k9d8MHueDOI7nsa1lUQaW7UOpRhLqjW16YR1WJbOIE5xkW8vCEz8tZgvQEmObXpJRR23Def5qtlorygdrrCYMsFUvyZTCi1aWUtwbz087MCTYrpdkSiP01FG2Gwsz3yNlpcF2vSRTGrWXzMDIUo5IFb2QyCNlpcERekkmQ/o5IlUYeyfhNYYj9JJMJmBD/4m8obUco1XkButprJRhAsfoJZmMcQKXY7SiD2ai1xCO0Usy2YCzeidHNQln/i7JYwNH6SWZbMANKOlYpWMTb9yi5LGB4/SSTNZ4xT0cN6XIUXvFsZZwnF6SyRZs0mGacY7k2Q9GpLG2cKReKD4hGW2JvGAfR2L2/f3SGFuoN47UC4PeSWZbsBcC2gv8aTPz2ifwFN9ym3rhpLgqmVuCTp02nDyTYCKucJt60csoy4tmGo56XkO6Zgn1RJ9euc2Zxd8IiEH/DSe4we2lK747siDrG7O9KI964vbMVL+J4Bo24+/mwLkBm/YXls5l6+YbRX9xIegSgoaxiX5KhdoJ1aC3OepdrDiFVdxGNtX/eiruxoZ8JhVtK07wKXLVgcYXYSbRh7N2neM2oKYf5tV2bqM14TH2SeFzizrD7diplA82Yxb+yqFzB/Vg/MVuo2C+lQyzBU8wIqRrVuDTAbdlLlqDYpgNjrqNn/1Nv7dGveK2zEWngRxmBjb/eJgrrKxh+HXlDLzntsyV5fN7fe/43RyF5eh3Z9lP9F7gKHPhBu5LYWlQo6HrH+OYKdHvWr0J+O5xjLlwBh+XwlJx1AmOaBJdEz0pYDJ7OMJc8YBahEf3QwrUo06xXSsaI3tl0PxY7A4uZLudcAOHpFANZ9mWKhqb8GrBSjjIttaE9XcYZ3lFCidwkyVcP8LDjUUezG5ZyiSoJtXm4dlUGiguR7ELCCwg+DuO2FE6m/GzN8u/X+tf8qpzyH5NmZQNBqkW1eRhHXXUkVZdXf8ASb9GwfjBc40AAAAASUVORK5CYII=" alt="butterfly" height="30" width="30">
