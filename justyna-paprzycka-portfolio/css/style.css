@@ -1,7 +1,7 @@
 /* GENERAL STYLES - start */
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 
@@ -11,16 +11,22 @@ body {
     padding: 0;
     color: gray;
     font-weight: 300;
+    overflow: auto;
 
 }
 
-.anchor { 
+/*.anchor { 
     padding-top: 80px; 
    
-}
+}*/
+
 #main-nav {
     background-color: #616161;
     height: 80px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
+-moz-box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
+box-shadow: 0px 5px 5px 0px rgba(97,97,97,1);
+    
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -60,8 +66,8 @@ body {
 }
 
 
-#main-header {
-    background-image: linear-gradient( rgba(0, 0, 0, .3), rgba(0, 0, 0, .4)), url(../img/header-background.jpg);
+#header {
+    background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url(../img/header-background.jpg);
 
     height: 100vh;
     background-size: cover;
@@ -71,23 +77,33 @@ body {
 
 }
 
-.header-content {
-    position: absolute;
+#header-container-background {
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+    text-align: center;
+
 }
 
-.header-content p {
-    font-family: 'Dosis', sans-serif;
+#header h3.name {
+    
+    color: #f8bbd0;
+    font-size: 80px;
+   
+    
+
+}
+
+#header p.front {
+
+
     font-size: 50px;
-    margin-left: 150px;
-    margin-bottom: 150px;
-
-
 }
 
-h1 {
+/*}
+
+ #header-container-background .center-name {
 
     font-weight: normal;
     color: #f8bbd0;
@@ -97,18 +113,18 @@ h1 {
     margin-bottom: 80px;
 
 
-}
+}*/
 
 #about {
     margin: 40px;
 
-    
+
 }
 
 #about .main-item {
     font-family: 'Dosis', sans-serif;
     font-size: 50px;
-    padding-bottom: 70px; 
+    padding-bottom: 70px;
     color: #616161;
     background-size: cover;
 
@@ -121,8 +137,8 @@ h1 {
     line-height: 1.5;
     position: relative;
 
- 
-  
+
+
 
 
 
@@ -132,12 +148,11 @@ h1 {
     padding: 0px;
 }
 
-figure.circle-img
-{
+figure.circle-img {
     margin: auto;
 }
 
-.circle-img .img-photo{
+.circle-img .img-photo {
     background-image: url(../img/justyna_paprzycka.jpg);
     width: 230px;
     height: 230px;
@@ -153,7 +168,8 @@ figure.circle-img
 
 #skills {
     background-color: #eeeeee;
-    padding-bottom: 40px;;
+    padding-bottom: 40px;
+    ;
 
 }
 
@@ -178,10 +194,10 @@ figure.circle-img
 #skills .under-text {
     font-family: "Dosis", sans-serif;
     font-size: 20px;
-  
 
 
-} 
+
+}
 
 #skills .fab {
 
@@ -277,6 +293,7 @@ figure.circle-img
 #portfolio {
     padding-bottom: 30px;
 }
+
 #contact {
     background-image: linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url(../img/footer-background.jpg);
     background-size: cover;
@@ -290,8 +307,7 @@ figure.circle-img
     font-family: "Dosis", sans-serif;
     font-size: 50px;
     color: white;
-/*    padding-top: 50px;*/
-
+    /*    padding-top: 50px;*/
 }
 
 #contact .under-text {
@@ -301,64 +317,14 @@ figure.circle-img
 
 }
 
- 
 
-/* #contact .form-control {
-    height: 40px;
-max-width: 400px;
-    border: 2px solid #616161;
-    border-radius: 10px;
-    color: #fff;
-    outline: none;
-
-}
-
-
-#contact .form-text {
-    height: 160px;
-max-width: 404px;
-    border: 2px solid #616161;
-    border-radius: 10px;
-    color: #fff;
-
-}
-
-textarea::placeholder {
-    color: #6c757d;
-}
-
-textarea {
-    outline: none;
-    background-color: rgba(0, 0, 0, .2);
-    color: black;
-    
-}
-
-
-#contact .btn {
-    height: 40px;
-    width: 80px;
-    border: 1px solid #424242;
-    border-radius: 10px;
-    background-color: #616161;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-input .form-control {
-    color: aliceblue;
-}
-
-#contact .btn:hover {
-    background-color: #bdbdbd;
-} */
 
 #contact .contact-details {
     padding-bottom: 40px;
 }
+
 .icons {
-    margin:auto;
+    margin: auto;
 }
 
 
@@ -447,22 +413,21 @@ input .form-control {
 }
 
 .form-contact .form-control {
-    
+
     border: 0;
     color: #fff;
     outline: none;
     background-color: rgba(238, 238, 238, 0.5);
-   
+
 }
 
 .form-control:focus {
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .form-contact ::placeholder {
     color: #fff;
     opacity: 0.5;
 }
-
